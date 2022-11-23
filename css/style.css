@@ -208,7 +208,7 @@ header nav a img {
 
 .card {
   background: #ffffff;
-  width: 31%;
+  width: 29%;
   height: 199px;
   border: solid 5px #ffffff;
   border-radius: 20px;
@@ -529,9 +529,6 @@ footer h4 {
     flex: 100%;
   }
 
-  .info {
-    text-align: left;
-  }
 
   .info-logo {
     margin-left: 20px;
@@ -566,6 +563,7 @@ footer h4 {
 
   .populaires {
     margin-bottom: 30px;
+    border-radius: 0;
   }
 
   .card-pop {
