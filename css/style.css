@@ -10,10 +10,12 @@
 body {
   max-width: 1400px;
   margin: auto;
-  list-style: none;
   font-family: "Raleway";
   font-style: normal;
   font-weight: 700;
+}
+
+ul {   list-style: none;
 }
 
 a {
