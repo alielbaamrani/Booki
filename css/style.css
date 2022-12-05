@@ -3,17 +3,22 @@
 * {
   margin: 0;
   padding: 0;
-  text-decoration: none;
+  box-sizing: border-box;
+
+}
+
+body {
+  max-width: 1400px;
+  margin: auto;
   list-style: none;
   font-family: "Raleway";
   font-style: normal;
-  box-sizing: border-box;
   font-weight: 700;
 }
 
-html {
-  max-width: 1400px;
-  margin: auto;
+a {
+  text-decoration: none;
+  color: black;
 }
 
 /* Media Desktop*/
@@ -43,7 +48,7 @@ header nav div a {
 }
 
 .logo {
-  flex: 0;
+  flex: 0; /*Flex initial*/
 }
 
 .nav-link {
@@ -122,7 +127,6 @@ header nav a img {
   font-size: 18px;
   line-height: 21px;
   color: white;
-  cursor: pointer;
 }
 
 .btn-search {
@@ -138,7 +142,7 @@ header nav a img {
 .filtres {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /* Reste dans la div*/
   font-size: 17px;
   line-height: 20px;
   align-items: center;
@@ -171,12 +175,16 @@ header nav a img {
   text-align: center;
 }
 
-.info-logo {
+.fa-info {
+  margin-right: 15px;
+  font-size: 15px;
+  color: #0065FC;
+  border: 1px solid #D9D9D9;
+  line-height: 24px;
   width: 24px;
-  height: 24px;
-  border: solid 1px #d9d9d9;
   border-radius: 50%;
-  margin-right: 11px;
+  text-align: center;
+  vertical-align: baseline;
 }
 
 /* Block 1 */
@@ -191,7 +199,7 @@ header nav a img {
   font-size: 22px;
 }
 
-.hebergement {
+#hebergement {
   width: 70%;
   height: 626px;
   background-color: #f2f2f2;
@@ -213,8 +221,7 @@ header nav a img {
   border: solid 5px #ffffff;
   border-radius: 20px;
   margin-bottom: 30px;
-  cursor: pointer;
-  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5)); /* Ombres */
 }
 
 .desc {
@@ -240,7 +247,7 @@ header nav a img {
   background-size: cover;
   border-radius: 20px 20px 0px 0px;
   box-sizing: border-box;
-  object-fit: cover;
+  object-fit: cover; /*Rempli la boite en maitenant son ratio*/
 }
 
 .card-desc {
@@ -257,6 +264,7 @@ header nav a img {
 }
 
 .plus {
+  font-size: 18px;
   margin: 0px 30px;
 }
 /* Populaires */
@@ -273,6 +281,9 @@ header nav a img {
   padding: 40px;
   display: flex;
   justify-content: space-between;
+}
+.title-pop h1 {
+  font-size: 18px;
 }
 
 .courbe {
@@ -293,14 +304,11 @@ header nav a img {
 .card-pop {
   background: #ffffff;
   width: 100%;
-  padding-bottom: 5px;
   height: 144px;
   border: solid 5px #ffffff;
   border-radius: 20px;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
   display: flex;
-  cursor: pointer;
-
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
 }
 
@@ -336,7 +344,7 @@ header nav a img {
 }
 
 /* Marseille */
-.title-mars-1 {
+#title-mars-1 {
   font-size: 22px;
   line-height: 18px;
   margin-right: 50%;
@@ -364,17 +372,16 @@ header nav a img {
 .card-mars {
   position: relative;
   width: 23%;
-  height: 444px;
   background: #ffffff;
   border-radius: 20px;
   display: flex;
   background-position: center;
   background-size: cover;
-  cursor: pointer;
   filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.5));
 }
 
 .card-mars img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
   border-radius: 20px;
@@ -433,7 +440,7 @@ footer h4 {
     flex-direction: column;
   }
 
-  .hebergement {
+  #hebergement {
     width: 100%;
     margin-bottom: 3%;
   }
@@ -480,7 +487,6 @@ footer h4 {
     flex: 1;
     border-bottom: solid 2px #f2f2f2;
   }
-  .nav-link a.active,
   .nav-link a:hover {
     border-top: unset;
     border-bottom: solid 2px #0065fc;
@@ -525,7 +531,7 @@ footer h4 {
   .filtres .button {
     margin: 0 15px 15px 0;
   }
-  .filtres h3 {
+  .filtres h2 {
     margin-bottom: 15px;
     flex: 100%;
   }
@@ -538,7 +544,7 @@ footer h4 {
     flex-direction: column-reverse;
   }
 
-  .hebergement {
+  #hebergement {
     background-color: #ffffff;
     height: 100%;
     flex-direction: column;
@@ -571,8 +577,9 @@ footer h4 {
     width: 100%;
   }
 
-  .title-mars-1 {
+  #title-mars-1 {
     padding: 40px;
+    font-size: 22px;
   }
   .container-marseille {
     justify-content: space-evenly;
