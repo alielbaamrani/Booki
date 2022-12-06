@@ -30,29 +30,31 @@
       <!-- Block-0 -->
       <div class="block-0">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-        <p>En plein centre-ville ou en pleine nature</p>
+        <h3>En plein centre-ville ou en pleine nature</h3>
       </div>
 
       <!-- Search -->
-      <div class="search-row">
-        <div class="btn btn-location">
-          <i class="fa-solid fa-location-dot"></i>
+      <form action="javascript(void:0)" method="post">
+        <div class="search-row">
+          <button class="btn btn-location">
+            <i class="fa-solid fa-location-dot"></i>
+          </button>
+          <input
+            type="text"
+            name="location"
+            class="btn search-input"
+            value="Marseille, France"
+          />
+          <input
+            type="submit"
+            class="btn btn-search-common btn-search"
+            value="Rechercher"
+          />
+          <button class="btn btn-search-common btn-search-glass">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
         </div>
-        <input
-          type="text"
-          name="location"
-          class="btn search-input"
-          value="Marseille, France"
-        />
-        <input
-          type="submit"
-          class="btn btn-search-common btn-search"
-          value="Rechercher"
-        />
-        <div class="btn btn-search-common btn-search-glass">
-          <i class="fa-solid fa-magnifying-glass"></i>
-        </div>
-      </div>
+      </form>
 
       <!-- Filtres-->
       <div class="filtres">
@@ -68,10 +70,8 @@
       </div>
       <!-- info -->
       <div class="info">
-        <div class="info-logo">
-          <i class="fa-solid fa-info"></i>
-        </div>
-        Plus de 500 logements sont disponibles dans cette ville
+        <button class="btn-info"><i class="fa-solid fa-info"></i></button>
+        <h3>Plus de 500 logements sont disponibles dans cette ville</h3>
       </div>
       <!-- Block-1 -->
       <div class="block-1">
@@ -89,7 +89,7 @@
                   />
                 </div>
                 <div class="desc">
-                  <span>Auberge La canebière</span>
+                  <h4>Auberge La canebière</h4>
                   <p>Nuit à partir de 25€</p>
                   <div class="star">
                     <i class="fa-solid fa-star etoile"></i>
@@ -112,7 +112,7 @@
                   />
                 </div>
                 <div class="desc">
-                  Hôtel du port
+                  <h4>Hôtel du port</h4>
                   <p>Nuit à partir de 52€</p>
                   <div class="star">
                     <i class="fa-solid fa-star etoile"></i>
@@ -134,7 +134,7 @@
                   />
                 </div>
                 <div class="desc">
-                  <span>Hôtel Les mouettes</span>
+                  <h4>Hôtel Les mouettes</h4>
                   <p>Nuit à partir de 76€</p>
                   <div class="star">
                     <i class="fa-solid fa-star etoile"></i>
@@ -156,7 +156,7 @@
                   />
                 </div>
                 <div class="desc">
-                  <span>Hôtel de la mer</span>
+                  <h4>Hôtel de la mer</h4>
                   <p>Nuit à partir de 46€</p>
                   <div class="star">
                     <i class="fa-solid fa-star etoile"></i>
@@ -178,7 +178,7 @@
                   />
                 </div>
                 <div class="desc">
-                  <span>Auberge Le Panier</span>
+                  <h4>Auberge Le Panier</h4>
                   <p>Nuit à partir de 23€</p>
                   <div class="star">
                     <i class="fa-solid fa-star etoile"></i>
@@ -200,7 +200,7 @@
                   />
                 </div>
                 <div class="desc">
-                  <span>Hôtel Chez Amina</span>
+                  <h4>Hôtel Chez Amina</h4>
                   <p>Nuit à partir de 96€</p>
                   <div class="star">
                     <i class="fa-solid fa-star etoile"></i>
@@ -233,7 +233,7 @@
                     alt="Hotel le soleil du matin"
                   />
                   <div class="desc-pop">
-                    <span>Hôtel Le soleil du matin</span>
+                    <h4>Hôtel Le soleil du matin</h4>
                     <p>Nuit â partir de 128€</p>
                     <div class="star-pop">
                       <i class="fa-solid fa-star etoile"></i>
@@ -253,7 +253,7 @@
                     alt="Chambre d'hotes au coeur de l'eau"
                   />
                   <div class="desc-pop">
-                    <span>Chambres d'hôtes Au coeur de l'eau</span>
+                    <h4>Chambres d'hôtes Au coeur de l'eau</h4>
                     <p>Nuit â partir de 71€</p>
                     <div class="star-pop">
                       <i class="fa-solid fa-star etoile"></i>
@@ -273,7 +273,7 @@
                     alt="Hôtel Bleu et Blan"
                   />
                   <div class="desc-pop">
-                    <span>Hôtel Bleu et Blanc</span>
+                    <h4>Hôtel Bleu et Blanc</h4>
                     <p>Nuit â partir de 68€</p>
                     <div class="star-pop">
                       <i class="fa-solid fa-star etoile"></i>
@@ -308,7 +308,6 @@
           </div>
           <div class="card-mars">
             <a href="#">
-
               <img
                 src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
                 alt="Fort de Pomégues"
