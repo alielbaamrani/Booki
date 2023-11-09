@@ -1,3 +1,3 @@
 # Booki
 
-First project HTML & CSS for openclassroom
+Booki - Projet 2 - OpenClassRoom
